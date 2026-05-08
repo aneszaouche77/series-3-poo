@@ -1,22 +1,22 @@
 package Anes;
 
-class Rectangle extends Shape {
+public class Rectangle extends Shape {
+
     private double length;
     private double width;
 
-    
     public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
     }
 
-   
-    public double area() {
+    @Override
+    double area() {
         return length * width;
     }
 
-    
-    public double perimeter() {
+    @Override
+    double perimeter() {
         return 2 * (length + width);
     }
 }
